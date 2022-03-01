@@ -33,7 +33,6 @@ BASIC STYLING
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px solid red;
     list-style: none;
 }
 
@@ -49,8 +48,13 @@ a {
     text-decoration: none;
 }
 
-section {
+section, footer {
     font-family: var(--normal-font-family);
+}
+
+input {
+    outline: none;
+    border: none;
 }
 
 /*
@@ -342,10 +346,10 @@ SECTION STYLING - FIFTH SECTION
     padding: 30px;
 }
 
-.container-testimonials .testimonial-cards .card p,h4 {
+.container-testimonials .testimonial-cards .card p,
+.container-testimonials .testimonial-cards .card h4 {
     background: #154FB3;
     color: #fff;
-    border-radius: 2px;
 }
 
 .container-testimonials .testimonial-cards .card img {
@@ -368,6 +372,8 @@ SECTION STYLING - SIXTH SECTION
 
 .section-six {
     background-color: #fff;
+    padding-bottom: 2rem;
+    padding-top: .5rem;
 }
 
 .section-six .form-container {
@@ -413,4 +419,86 @@ SECTION STYLING - SIXTH SECTION
     font-weight: 600;
     padding: 10px 120px;
     border-radius: 25px;
+}
+
+ /*
+===========
+  FOOTER
+===========
+ */
+
+footer {
+    background-color: #925834;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer .container-last {
+    padding: 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer .container-last .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+footer .container-last .sub-container-1 p {
+    font-size: .85rem;
+}
+
+footer .container-last .sub-container-1 input {
+    height: 2.5rem;
+    padding: 1rem;
+}
+
+footer .container-last .sub-container-1 .input-group {
+    display: flex;
+    margin-top: -1rem;
+}
+
+footer .container-last .sub-container-1 a {
+    background: #F37336;
+    padding: .48rem 1rem;
+}
+
+footer .container-last .sub-container-2 {
+    font-size: .85rem;
+    display: flex;
+}
+
+footer .container-last img {
+     width: 3.5rem;
+     margin-right: 8px;
+}
+
+footer .container-last .sub-container-2 ul {
+    padding: 1rem;
+}
+
+footer .container-last .lower-content {
+    grid-column: 2/3;
+    padding-left: 10rem;
+    align-items: center;
+    margin-top: -3.2rem;
+}
+
+footer .container-last .lower-content p {
+    display: flex;
+    align-items: center;
+}
+
+footer .container-last .lower-content i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: .2rem;
+}
+
+footer .container-last .lower-content i:first-child {
+    margin-left: .6rem;
 }
