@@ -1,0 +1,416 @@
+/*
+==================
+GOOGLE FONT CDN
+==================
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+/*
+==================
+ROOT VARIABLES
+==================
+ */
+
+ :root {
+     --bg-color: #E5E5E5;
+     --top-btn-bg-color: #F37336;
+     --link-color: #154FB3;
+     --logo-size: 169px;
+     --nav-link-ft-weight: 600;
+     --normal-font-family: 'Poppins', sans-serif;
+     --big-fonts-font-family: 'Montserrat', sans-serif;
+     --nav-links-font-size: .95rem;
+ }
+
+
+/*
+==================
+BASIC STYLING
+==================
+ */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
+    list-style: none;
+}
+
+html {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    font-family: var(--normal-font-family);
+}
+
+/*
+==========================
+CONTENT STYLING -- NAVBAR
+==========================
+ */
+
+ nav {
+     display: flex;
+     justify-content: space-between;
+     padding: 25px 80px;
+     height: 3.5rem;
+     font-family: var(--normal-font-family);
+     background-color: #fff;
+     box-shadow: 0px 5px 19px 0px rgba(107, 102, 102, 0.75);
+-webkit-box-shadow: 0px 5px 19px 0px rgba(124, 121, 121, 0.75);
+-moz-box-shadow: 0px 5px 19px 0px rgba(126, 121, 121, 0.75);
+ }
+
+ nav ul, nav .logo {
+     display: flex;
+     align-items: center;
+     color: var(--link-color);
+     font-weight: 500;
+ }
+
+ nav ul li {
+     font-size: var(--nav-links-font-size);
+ }
+
+ nav ul li a {
+    color: #154FB3;
+    font-weight: 600;
+ }
+
+ nav ul li:not(:last-child) {
+     margin-right: 1.5rem;
+ }
+
+ nav ul li:last-child {
+     line-height: 2;
+ }
+
+ .active {
+     color: var(--top-btn-bg-color);
+ }
+
+ .last-child {
+     color: #fff;
+     background-color: var(--top-btn-bg-color);
+     border-radius: 20px;
+     padding: 4px 14px;
+ }
+
+ /*
+==================================
+SECTION STYLING - FIRST SECTION
+==================================
+ */
+
+.container {
+    padding: 20px 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.container img{
+    width: 19rem;
+}
+
+
+.container h2 {
+    color: #925834;
+    font-family: var(--big-fonts-font-family);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.container p {
+    font-family: var(--normal-font-family);
+    color: #925834;
+    padding-bottom: 2rem;
+    font-weight: 400;
+}
+
+.container a {
+    background-color: #154FB3;
+    color: #fff;
+    font-family: var(--big-fonts-font-family);
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+ /*
+==================================
+SECTION STYLING - SECOND SECTION
+==================================
+ */
+
+.second-section {
+    background: #fff;
+    padding: 20px 50px;
+    font-family: var(--normal-font-family);
+    color: #F37336;
+}
+
+.second-section .header {
+    text-align: center;
+}
+
+.container-2 {
+    padding: 15px 30px 50px 30px;
+}
+
+.container-2 .cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+
+.container-2 .cards h3 {
+    font-weight: 500;
+}
+
+.container-2 .cards p {
+    font-weight: 400;
+}
+
+.card img {
+    width: 4rem;
+}
+
+.container-2 .cards .card {
+    padding: 20px;
+}
+
+ /*
+==================================
+SECTION STYLING - THIRD SECTION
+==================================
+ */
+
+.third-section {
+    padding: 10px 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.cards-two {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 25px;
+}
+
+.cards-two .card {
+    color: #F37336;
+    padding-bottom: 40px;
+}
+
+.cards-two .card img {
+    width: 10rem;
+}
+
+.cards-two .card h4, p, a {
+    margin-bottom: 20px;
+} 
+
+.cards-two .card a {
+    background-color: #154FB3;
+    color: #fff;
+    font-family: var(--big-fonts-font-family);
+    font-weight: 600;
+    padding: 7px 50px;
+    border-radius: 25px;
+}
+
+.cards-two .card {
+    background-color: #fff;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: -1px 31px 46px -17px rgba(51, 48, 48, 0.75);
+    -webkit-box-shadow: -1px 31px 46px -17px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 31px 46px -17px rgba(0,0,0,0.75);
+}
+
+.span-container {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.span-container img {
+    cursor: pointer;
+    margin: 2px;
+    width: 1rem;
+}
+
+ /*
+==================================
+SECTION STYLING - FOURTH SECTION
+==================================
+ */
+
+.container3 {
+    padding: 10px 50px;
+}
+
+.container3 .card_s {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container3 .card_s .card {
+    padding: 25px;
+    background-color: #fff;
+    color: #F37336;
+} 
+
+.container3 .card_s .card:last-child {
+    border-left: 5px solid #E5E5E5;
+}
+
+.container3 .card_s .card .para {
+    margin-bottom: 25px;
+}
+
+.container3 .card_s .card a {
+    background-color: #154FB3;
+    color: #fff;
+    font-family: var(--big-fonts-font-family);
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.container3 .card_s .card label {
+    cursor: pointer;
+} 
+
+.container3 .card_s .card .inputs-container {
+    display: flex;
+}
+
+.container3 .card_s .card .inputs-container .input {
+    margin-right: 25px;
+    background-color: #154FB3;
+    color: #fff;
+    font-family: var(--big-fonts-font-family);
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.container3 .card_s .card .inputs-container .not-active {
+    background-color: #fff;
+    color: #F37336;
+    border: 1px solid #154FB3;
+}
+
+ /*
+==================================
+SECTION STYLING - FIFTH SECTION
+==================================
+ */
+
+.header {
+    text-align: center;
+    color: #F37336;
+}
+
+.container-testimonials {
+    padding: 20px 50px;
+}
+
+.container-testimonials .testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-testimonials .testimonial-cards .card {
+    padding: 50px;
+}
+
+.container-testimonials .testimonial-cards .card p {
+    padding: 30px;
+}
+
+.container-testimonials .testimonial-cards .card p,h4 {
+    background: #154FB3;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.container-testimonials .testimonial-cards .card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: -2.6rem;
+    margin-left: -1.8rem;
+}
+
+.container-testimonials .testimonial-cards .card h4 {
+    text-align: center;
+}
+
+ /*
+==================================
+SECTION STYLING - SIXTH SECTION
+==================================
+ */
+
+.section-six {
+    background-color: #fff;
+}
+
+.section-six .form-container {
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.section-six .form-container form input {
+    background-color: #E5E5E5;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    width: 31.625rem;
+    border-radius: 10px;
+}
+
+.section-six .form-container form {
+    margin-bottom: .8rem;
+}
+
+.section-six .form-container form input::placeholder {
+    transform: translateY(-25px);
+    color: #F37336;
+}
+
+.section-six .form-container form input:last-child::placeholder {
+    transform: translateY(-95px);
+}
+
+.section-six .form-container form input:not(:last-child) {
+    height: 5.75rem;
+}
+
+.section-six .form-container form input:last-child {
+    height: 15.1875rem;
+}
+
+.section-six .form-container a {
+    background-color: #154FB3;
+    color: #fff;
+    font-family: var(--big-fonts-font-family);
+    font-weight: 600;
+    padding: 10px 120px;
+    border-radius: 25px;
+}
