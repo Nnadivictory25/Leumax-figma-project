@@ -27,4 +27,5 @@ preview link https://leumaxfigmatocode.netlify.app/
 # NOTE
 
 This project was designed by Uzzi, a UI/UX Designer. profile link https://twitter.com/OlaBlax
+<br>
 I did the coding :)
