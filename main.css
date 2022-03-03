@@ -560,11 +560,11 @@ MEDIA QUERIES FOR RESPONSIVENESS
         position: absolute;
         right: .5rem;
         cursor: pointer;
-        transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out !important;
     }
 
     header svg:hover{
-        opacity: .9;
+        opacity: 0.85 !important;
     }
 
     header ul li {
@@ -579,10 +579,6 @@ MEDIA QUERIES FOR RESPONSIVENESS
         height: 100%;
         padding: .6rem 0;
         font-size: 1.1rem;
-    }
-
-    .navbarToggler {
-        transition: all .3s ease-in-out;
     }
 
     #closeNav {
